@@ -239,6 +239,14 @@ define Device/wbs510-v1
 endef
 TARGET_DEVICES += wbs510-v1
 
+define Device/wbs510-v2
+  $(Device/cpe510-520-v1)
+  DEVICE_TITLE := TP-LINK WBS510 v2
+  BOARDNAME := WBS510V2
+  TPLINK_BOARD_ID := WBS510V2
+endef
+TARGET_DEVICES += wbs510-v2
+
 define Device/eap120-v1
   DEVICE_TITLE := TP-LINK EAP120 v1
   MTDPARTS := spi0.0:128k(u-boot)ro,64k(partition-table)ro,64k(product-info)ro,1536k(kernel),14336k(rootfs),192k(config)ro,64k(ART)ro,15872k@0x40000(firmware)

@@ -13,7 +13,8 @@ case "$board" in
 cpe210|\
 cpe510|\
 wbs210|\
-wbs510)
+wbs510|\
+wbs510-v2)
 	ucidef_add_gpio_switch "poe_passthrough" "PoE Passthrough" "20"
 	;;
 nanostation-m)

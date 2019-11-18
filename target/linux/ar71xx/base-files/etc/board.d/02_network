@@ -294,7 +294,8 @@ ar71xx_setup_interfaces()
 	cpe210|\
 	cpe510|\
 	wbs210|\
-	wbs510)
+	wbs510|\
+	wbs510-v2)
 		ucidef_add_switch "switch0" \
 			"0@eth0" "5:lan" "4:wan"
 		;;

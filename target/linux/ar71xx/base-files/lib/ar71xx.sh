@@ -1455,6 +1455,10 @@ ar71xx_board_detect() {
 		name="wbs510"
 		tplink_pharos_board_detect "$(tplink_pharos_get_model_string | tr -d '\r')"
 		;;
+	*"WBS510 v2")
+		name="wbs510-v2"
+		tplink_pharos_board_detect "$(tplink_pharos_v2_get_model_string)"
+		;;
 	"WeIO"*)
 		name="weio"
 		;;
